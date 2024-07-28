@@ -1,0 +1,327 @@
+{
+  "beginSessionEvents": {
+    "page": "1",
+    "message": "Welcome to Letshego Uganda.\n\n1. New Customer \n2. Existing Customer",
+    "type": "INPUT",
+    "events": "checkCustomerExist",
+    "dataLabel": "bSE",
+    "terminalPage": false
+  },
+  "continueSessionLogin": {
+    "page": "1",
+    "message": "Continue From Previous Session\n\nPlease enter your PIN:",
+    "type": "INPUT",
+    "events": "validatePin,clearAuthPin,checkProfileComplete",
+    "dataLabel": "authPin",
+    "terminalPage": false
+  },
+  "newAccount": {
+    "page": "1",
+    "message": "Welcome to Letshego Uganda\n\n1. Create Profile \n2. Exit",
+    "type": "OPTION",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": false
+  },
+  "newAccount_1": {
+    "page": "1",
+    "message": "Please accept terms and conditions of Letshego Uganda. Visit Web Link to T and Cs\n\n1. Accept\n2. Decline",
+    "type": "OPTION",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": false
+  },
+  "newAccount_2": {
+    "page": "2",
+    "message": "Thank you for choosing Letshego.",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+  "newAccount_1_1": {
+    "page": "1",
+    "message": "Create Profile \n\nCreate a New PIN (PIN should be between 6-10 digits long)",
+    "type": "INPUT",
+    "events": "inputDataValidation",
+    "dataLabel": "authNewPin",
+    "terminalPage": false
+  },
+  "newAccount_1_2": {
+    "page": "2",
+    "message": "Dear customer, you have declined the request.\n\nPlease visit any Letshego branch for assistance or contact our Call Centre on +256312339330",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+  "newAccount_1_1_1": {
+    "page": "1",
+    "message": "Create Account\n\nRepeat new PIN:",
+    "type": "INPUT",
+    "events": "confirmPin,createAccount",
+    "dataLabel": "confirmAuthPin",
+    "terminalPage": false
+  },
+  "newAccount_1_1_1_1": {
+    "page": "1",
+    "message": "Identification Type \n\nPlease select an ID type:\n \n1. National ID\n2. Computer No/IPPS",
+    "type": "INPUT",
+    "events": "optionSelectionValidation",
+    "dataLabel": "ugIdType",
+    "terminalPage": false
+  },
+  "newAccount_1_1_1_1_1": {
+    "page": "1",
+    "message": "Provide ID \n\nPlease Enter ID Number",
+    "type": "INPUT",
+    "events": "inputDataValidation,verifyIdNumber",
+    "dataLabel": "ugIdNumber",
+    "terminalPage": false
+  },
+  "newAccount_1_1_1_1_1_1": {
+    "page": "1",
+    "message": "Referral Reward\n\nHave you been reffered by an agent or staff? If Yes, please enter refferal code or enter 0 to skip:",
+    "type": "INPUT",
+    "events": "inputDataValidation,submitAgentReferral",
+    "dataLabel": "referralCode",
+    "terminalPage": false
+  },
+  "newAccount_1_1_1_1_1_1_1": {
+    "page": "1",
+    "message": "You have  successfully been registered. Thank you for choosing Letshego Uganda. \n\nEnter 0 for main menu.",
+    "type": "INPUT",
+    "events": "startFromBeginning",
+    "dataLabel": "startFromBeginning",
+    "terminalPage": false
+  },
+  "newAccount_1_1_1_1_1_1_1_1_1_1_1": {
+    "page": "1",
+    "message": "Thank you for choosing Letshego.",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+  "completeProfile": {
+    "page": "1",
+    "message": "Complete Your Profile \n\nPlease select an ID type:\n \n1. National ID\n2. Computer No/IPPS",
+    "type": "INPUT",
+    "events": "optionSelectionValidation",
+    "dataLabel": "ugIdType",
+    "terminalPage": false
+  },
+  "completeProfile_1": {
+    "page": "1",
+    "message": "Provide ID \n\nPlease Enter ID Number",
+    "type": "INPUT",
+    "events": "inputDataValidation,verifyIdNumber",
+    "dataLabel": "ugIdNumber",
+    "terminalPage": false
+  },
+  "completeProfile_1_1": {
+    "page": "1",
+    "message": "Referral Reward\n\nHave you been reffered by an agent or staff? If Yes, please enter refferal code or enter 0 to skip:",
+    "type": "INPUT",
+    "events": "inputDataValidation,submitAgentReferral",
+    "dataLabel": "referralCode",
+    "terminalPage": false
+  },
+  "completeProfile_1_1_1": {
+    "page": "1",
+    "message": "You have  successfully been registered. Thank you for choosing Letshego Uganda. \n\nEnter 0 for main menu.",
+    "type": "INPUT",
+    "events": "startFromBeginning",
+    "dataLabel": "startFromBeginning",
+    "terminalPage": false
+  },
+  "completeProfile_1_1_1_1": {
+    "page": "1",
+    "message": "Thank you for choosing Letshego.",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+  "main": {
+    "page": "1",
+    "message": "Welcome to Letshego Uganda\n\n1. Top up Loan\n2. Monitor active loans\n3. Change PIN\n4. Forgot PIN",
+    "type": "OPTION",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": false
+  },
+  "main_1": {
+    "page": "1",
+    "message": "Top up Loan\n\nPlease enter your PIN:",
+    "type": "INPUT",
+    "events": "validatePin,clearAuthPin,checkProfileComplete,ugandaTopUpLoan",
+    "dataLabel": "authPin",
+    "terminalPage": false
+  },
+  "main_1_1_2": {
+    "page": "1",
+    "message": "Enter an amount between 80 000 UGX and 30 000 000 UGX\n\n00. Main Menu",
+    "type": "INPUT",
+    "events": "inputDataValidation",
+    "dataLabel": "loanAmount",
+    "terminalPage": false
+  },
+  "main_1_1_2_1": {
+    "page": "1",
+    "message": "Please select repayment term between 6 and 96 months:\n\n0. Back\n00: Main Menu",
+    "type": "INPUT",
+    "events": "loanTenureValidation,ugandaCheckLoanEligibility",
+    "dataLabel": "cleTenPageInput",
+    "terminalPage": false
+  },
+  "main_loan_application_referral": {
+    "page": "1",
+    "message": "Referral Reward\n\nHave you been referred by an agent or staff? If Yes, please enter referral code or enter 0 to skip:",
+    "type": "INPUT",
+    "events": "inputDataValidation,validateAgentReferral,ugandaCheckLoanEligibility",
+    "dataLabel": "referralCode",
+    "terminalPage": false
+  },
+  "main_2": {
+    "page": "1",
+    "message": "Monitor Active Loan\n\nPlease enter your PIN:",
+    "type": "INPUT",
+    "events": "validatePin,clearAuthPin,checkVerifiedCustomer,checkProfileComplete,getActiveLoanAccounts",
+    "dataLabel": "authPin",
+    "terminalPage": false
+  },
+  "main_2_1": {
+    "page": "1",
+    "message": "Monitor Active Loan\n\nEnter 0 for main menu",
+    "type": "INPUT",
+    "events": "startFromBeginning",
+    "dataLabel": "startFromBeginning",
+    "terminalPage": false
+  },
+  "main_2_1_1": {
+    "page": "1",
+    "message": "Thank you for choosing Letshego.",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+  "main_3": {
+    "page": "1",
+    "message": "Change PIN\n\nPlease enter your current PIN:",
+    "type": "INPUT",
+    "events": "validatePin,checkProfileComplete",
+    "dataLabel": "authPin",
+    "terminalPage": false
+  },
+  "main_3_1": {
+    "page": "1",
+    "message": "Change PIN\n\nCreate a new PIN (PIN should e between 6-10 digits long):",
+    "type": "INPUT",
+    "events": "inputDataValidation",
+    "dataLabel": "authNewPin",
+    "terminalPage": false
+  },
+  "main_3_1_1": {
+    "page": "1",
+    "message": "Change PIN\n\nRepeat new PIN:",
+    "type": "INPUT",
+    "events": "confirmPin,changePin",
+    "dataLabel": "confirmAuthPin",
+    "terminalPage": false
+  },
+  "main_3_1_1_1": {
+    "page": "1",
+    "message": "You have successfully updated your profile PIN. Thank you for choosing Letshego.",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+
+  "main_4": {
+    "page": "1",
+    "message": "Forgot PIN\n\nA default PIN would be sent to your phone number. \n\nEnter 1 to proceed or 0 to go back to main menu.",
+    "type": "INPUT",
+    "events": "generateDefaultPin",
+    "dataLabel": "gdpPage",
+    "terminalPage": false
+  },
+  "main_4_1": {
+    "page": "1",
+    "message": "Forgot PIN\n\nPlease enter default PIN sent to your phone number:",
+    "type": "INPUT",
+    "events": "verifyDefaultPin",
+    "dataLabel": "defaultPassword",
+    "terminalPage": false
+  },
+  "main_4_1_1": {
+    "page": "1",
+    "message": "Forgot PIN\n\nCreate a new PIN (PIN should e between 6-10 digits long):",
+    "type": "INPUT",
+    "events": "inputDataValidation",
+    "dataLabel": "authNewPin",
+    "terminalPage": false
+  },
+  "main_4_1_1_1": {
+    "page": "1",
+    "message": "Forgot PIN\n\nRepeat new PIN:",
+    "type": "INPUT",
+    "events": "confirmPin,setNewPin",
+    "dataLabel": "confirmAuthPin",
+    "terminalPage": false
+  },
+  "main_4_1_1_1_1": {
+    "page": "1",
+    "message": "Your have successfully reset your PIN.\n\nPress 0 to go back to main menu or # to exit.",
+    "type": "INPUT",
+    "events": "startFromBeginning",
+    "dataLabel": "startFromBeginning",
+    "terminalPage": false
+  },
+  "main_4_1_1_1_1_1": {
+    "page": "1",
+    "message": "Thank you for choosing Letshego.",
+    "type": "DIALOG",
+    "events": null,
+    "dataLabel": null,
+    "terminalPage": true
+  },
+
+  "beginMtnSession": {
+    "page": "1",
+    "message": "Welcome to Letshego Uganda.",
+    "type": "INPUT",
+    "events": "beginMtnBillerSession",
+    "dataLabel": "MSE",
+    "terminalPage": false
+  },
+
+  "beginMtnBillerSessionEvents": {
+    "page": "1",
+    "message": "Letshego\n\n1. Repay MSE Loan\n2. Check MSE Loan Balance\n3. View Mini-Statement\n0. Back\n*. Exit",
+    "type": "OPTION",
+    "events": null,
+    "dataLabel": "mseLoanInput",
+    "terminalPage": false
+  },
+
+  "beginMtnBillerSessionEvents_1": {
+    "page": "1",
+    "message": "Letshego\n\nPlease provide your Customer Identification Number to proceed to with the repayment. This number is on your loan statement",
+    "type": "INPUT",
+    "events": "inputDataValidation,outstandingLoanAmount",
+    "dataLabel": "customerNumber",
+    "terminalPage": false
+  },
+
+  "beginMtnBillerSessionEvents_3": {
+    "page": "1",
+    "message": "Letshego\n\nPlease provide your Customer Identification Number to proceed to with the repayment. This number is on your loan statement",
+    "type": "INPUT",
+    "events": "inputDataValidation,mseLoanMiniStatement",
+    "dataLabel": "customerNumber",
+    "terminalPage": false
+  }
+}
